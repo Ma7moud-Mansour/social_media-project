@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Detail</title>
+    <!-- Link the CSS file -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>Post Title</h2>
+        <p>By John Doe on 2024-09-10</p>
+        <div class="post-content">
+            <p>This is the content of the post...</p>
+        </div>
+        <hr>
+        <h3>Comments</h3>
+        <div class="comment">
+            <p><strong>Jane Smith:</strong> Great post! Thanks for sharing.</p>
+        </div>
+
+        <h4>Add a Comment:</h4>
+        <form action="/add-comment/" method="POST">
+            <textarea name="comment" rows="4" placeholder="Write your comment..." required></textarea>
+            <button type="submit">Submit Comment</button>
+        </form>
+    </div>
+</body>
+</html>

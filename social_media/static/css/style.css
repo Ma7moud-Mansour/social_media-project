@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers the container vertically */
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content inside the container */
+}
+
+/* Centering the login form specifically */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Curved and styled input fields */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Rounded fields */
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus effect for inputs */
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button styling */
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 25px; /* Curved button */
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Text and link at the bottom of the form */
+h4 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h4 a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+h4 a:hover {
+    text-decoration: underline;
+}
+
+/* Post List Specific Styles */
+.post-list {
+    margin-top: 20px;
+}
+
+.post {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.post h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+.post p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Post Details Page Specific Styles */
+.post-content {
+    margin-top: 15px;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #555;
+}
+
+.comment {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 0.9rem;
+}
+
+.comment p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.comment strong {
+    color: #333;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Styling the comment form */
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Curved textarea */
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .post h3 {
+        font-size: 1rem;
+    }
+
+    .post p,
+    .comment p {
+        font-size: 0.8rem;
+    }
+}
